@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"5ac98bbdda8e7791","type":"text","text":"# DOTS Best Practices","x":160,"y":0,"width":300,"height":60},
+		{"id":"afca3ac5fe2d3e26","type":"text","text":"# Basics of DOTS: Jobs and Entities","x":-617,"y":0,"width":437,"height":60},
+		{"id":"36826bcbe577ea52","type":"file","file":"Newest/Dots&ECS/Notes/DOTS Best Practices Notes.md","x":110,"y":180,"width":400,"height":400},
+		{"id":"721e09a4544d2566","type":"text","text":"# Code Monkey Vid","x":828,"y":37,"width":352,"height":63},
+		{"id":"5a99993417fbfb7e","type":"text","text":"# Github Repo\n","x":-1194,"y":4,"width":250,"height":60},
+		{"id":"233c992ea63b80a3","type":"text","text":"# Articles","x":-1739,"y":7,"width":250,"height":60},
+		{"id":"33adc6c82e8069e9","type":"file","file":"Newest/Dots&ECS/Notes/Start using DOTS in Half an Hour Notes.md","x":-1818,"y":169,"width":400,"height":400},
+		{"id":"595484286f6fa6ff","type":"file","file":"Newest/Dots&ECS/Notes/Entity Component System Samples Notes.md","x":-1272,"y":172,"width":400,"height":400},
+		{"id":"820851f3553d8548","type":"text","text":"## DOTS-Data Oriented Technology Stack","x":-300,"y":-240,"width":460,"height":60,"color":"5"},
+		{"id":"b5822fbbc842f136","type":"file","file":"Newest/Dots&ECS/Unity DOTS Explained (ECS, Job System, Burst Compiler - 2024 Still Updated).md","x":800,"y":172,"width":633,"height":1008}
+	],
+	"edges":[
+		{"id":"c43e00b70db2afda","fromNode":"820851f3553d8548","fromSide":"bottom","toNode":"5ac98bbdda8e7791","toSide":"top"},
+		{"id":"1ff86acb133258da","fromNode":"820851f3553d8548","fromSide":"bottom","toNode":"afca3ac5fe2d3e26","toSide":"top"},
+		{"id":"7d4f11434d9c0fa4","fromNode":"5ac98bbdda8e7791","fromSide":"bottom","toNode":"36826bcbe577ea52","toSide":"top"},
+		{"id":"0ed069ba66db6aaf","fromNode":"820851f3553d8548","fromSide":"bottom","toNode":"721e09a4544d2566","toSide":"top"},
+		{"id":"d9f24f6ced1678cb","fromNode":"721e09a4544d2566","fromSide":"bottom","toNode":"b5822fbbc842f136","toSide":"top"},
+		{"id":"71b700ceb4f658c2","fromNode":"820851f3553d8548","fromSide":"bottom","toNode":"5a99993417fbfb7e","toSide":"top"},
+		{"id":"4c2ba83324f68c47","fromNode":"820851f3553d8548","fromSide":"bottom","toNode":"233c992ea63b80a3","toSide":"top"},
+		{"id":"c8a366bc6d20b1c2","fromNode":"233c992ea63b80a3","fromSide":"bottom","toNode":"33adc6c82e8069e9","toSide":"top"},
+		{"id":"36f067995d3f5a1b","fromNode":"5a99993417fbfb7e","fromSide":"bottom","toNode":"595484286f6fa6ff","toSide":"top"}
+	]
+}

@@ -2,14 +2,14 @@
 	"nodes":[
 		{"id":"5ac98bbdda8e7791","type":"text","text":"# DOTS Best Practices","x":160,"y":0,"width":300,"height":60},
 		{"id":"afca3ac5fe2d3e26","type":"text","text":"# Basics of DOTS: Jobs and Entities","x":-617,"y":0,"width":437,"height":60},
-		{"id":"36826bcbe577ea52","type":"file","file":"Newest/Dots&ECS/Notes/DOTS Best Practices Notes.md","x":110,"y":180,"width":400,"height":400},
+		{"id":"36826bcbe577ea52","type":"file","file":"Newest/Dots_ECS/Notes/DOTS Best Practices Notes.md","x":110,"y":180,"width":400,"height":400},
 		{"id":"721e09a4544d2566","type":"text","text":"# Code Monkey Vid","x":828,"y":37,"width":352,"height":63},
 		{"id":"5a99993417fbfb7e","type":"text","text":"# Github Repo\n","x":-1194,"y":4,"width":250,"height":60},
 		{"id":"233c992ea63b80a3","type":"text","text":"# Articles","x":-1739,"y":7,"width":250,"height":60},
-		{"id":"33adc6c82e8069e9","type":"file","file":"Newest/Dots&ECS/Notes/Start using DOTS in Half an Hour Notes.md","x":-1818,"y":169,"width":400,"height":400},
-		{"id":"595484286f6fa6ff","type":"file","file":"Newest/Dots&ECS/Notes/Entity Component System Samples Notes.md","x":-1272,"y":172,"width":400,"height":400},
+		{"id":"33adc6c82e8069e9","type":"file","file":"Newest/Dots_ECS/Notes/Start using DOTS in Half an Hour Notes.md","x":-1818,"y":169,"width":400,"height":400},
+		{"id":"595484286f6fa6ff","type":"file","file":"Newest/Dots_ECS/Notes/Entity Component System Samples Notes.md","x":-1272,"y":172,"width":400,"height":400},
 		{"id":"820851f3553d8548","type":"text","text":"## DOTS-Data Oriented Technology Stack","x":-300,"y":-240,"width":460,"height":60,"color":"5"},
-		{"id":"b5822fbbc842f136","type":"file","file":"Newest/Dots&ECS/Unity DOTS Explained (ECS, Job System, Burst Compiler - 2024 Still Updated).md","x":800,"y":172,"width":633,"height":1008}
+		{"id":"b5822fbbc842f136","type":"file","file":"Newest/Dots_ECS/Unity DOTS Explained (ECS, Job System, Burst Compiler - 2024 Still Updated).md","x":800,"y":172,"width":633,"height":1008}
 	],
 	"edges":[
 		{"id":"c43e00b70db2afda","fromNode":"820851f3553d8548","fromSide":"bottom","toNode":"5ac98bbdda8e7791","toSide":"top"},

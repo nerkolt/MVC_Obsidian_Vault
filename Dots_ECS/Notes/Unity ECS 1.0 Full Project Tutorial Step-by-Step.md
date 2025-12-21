@@ -15,4 +15,4 @@ presentation grp
 * != ScheduleParallel() multiple workers //
 
 ## Burst Compilers
-SIMD optimization : combines multiple data components that are similar into one single cpu instrction 
+SIMD (Single instruction, multiple data) optimization : combines multiple data components that are similar into one single CPU instruction 

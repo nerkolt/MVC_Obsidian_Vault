@@ -11,4 +11,4 @@
 * locking primitives C#
 * [[Addressable Assets]]
 * Blittable types
-* Heap vs Stack
+* [[Heap vs Stack]]

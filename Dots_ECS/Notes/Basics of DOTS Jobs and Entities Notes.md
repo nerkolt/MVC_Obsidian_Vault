@@ -15,7 +15,7 @@
 ![[NativeArray.png]]
 No use of C# managed arrays (System.Array) since it's better not to use managed objects in jobs (managed objects ARE not allowed in burst comp)
 
-![[Pasted image 20251221145348.png]]
+![[Complete_ScheduleJob.png]]
 
 Complete() :
 * waits for job to finish executing before returning

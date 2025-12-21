@@ -14,3 +14,15 @@
 
 ![[NativeArray.png]]
 No use of C# managed arrays (System.Array) since it's better not to use managed objects in jobs (managed objects ARE not allowed in burst comp)
+
+![[Pasted image 20251221145348.png]]
+
+Complete() :
+* waits for job to finish executing before returning
+* used to sync jobs with the main thread
+* Removes all record of the job from the job queue
+
+> [!faq]- Things to keep in mind?
+> Jobs can only be completed/scheduled by the main thread
+> main thread can't access data in use by curr scheduled jobs 
+> 

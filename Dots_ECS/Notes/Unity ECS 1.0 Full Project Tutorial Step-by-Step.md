@@ -21,3 +21,7 @@ SIMD (Single instruction, multiple data) optimization : combines multiple data c
 
 * Provides a way to combine multiple DATA components into a single easy way to interface
 * You can add helper functions to them
+
+ [!faq]- IAspect obsolete?
+>Unity has no entity-based solution for animation, In Unity's Data-Oriented Technology Stack (DOTS), the obsolete `IAspect` interface has been replaced by directly using **`Component` and `EntityQuery` APIs** within systems.
+>The move away from `IAspect` is part of an effort to consolidate APIs, reduce code generation (improving compile times), and improve iteration time.

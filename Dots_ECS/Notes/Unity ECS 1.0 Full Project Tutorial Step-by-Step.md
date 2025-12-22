@@ -67,8 +67,37 @@ private readonly TransformAspect _transformAspect;
 ````
 New
 ```csharp
-    private readonly RefRW<LocalTransform> _transformAspect;
+private readonly RefRW<LocalTransform> _transformAspect;
 ```
+
+## AddComponent
+old
+```csharp
+AddComponent(new GraveyardRandom
+{
+	Value = Random.CreateFromIndex(authoring.RandomSeed)
+});
+ AddComponent<ZombieSpawnPoints>();
+```
+New
+```csharp
+AddComponent(entity, new GraveyardRandom
+{
+  Value = Unity.Mathematics.Random.CreateFromIndex(authoring.RandomSeed)
+});
+ AddComponent<ZombieSpawnPoints>(entity);
+```
+
+## direct NativeArray use
+* NativeArray internally contains raw pointers (to its buffer) + safety structures like `DisposeSentinel`
+* Unity's baking system treats regular `IComponentData` as **blittable** (pure memory-copyable, no managed references or unsafe pointers by default).
+* When it sees a pointer inside the struct, it throws this exact error to protect you from corrupted data after baking/serialization.
+
+`NativeArray<float3>` inside `IComponentData` is still unsafe for:
+
+* Subscenes / prefab baking
+* Structural changes
+* Future-proofing
 
 ### key takeaway 
 

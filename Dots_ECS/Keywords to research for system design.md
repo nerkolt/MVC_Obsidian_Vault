@@ -12,3 +12,4 @@
 * [[Addressable Assets]]
 * Blittable types
 * [[Heap vs Stack]]
+* Blob Assets

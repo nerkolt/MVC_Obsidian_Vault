@@ -42,3 +42,14 @@ For an easier alternative, Unity provides the C# job system:
 * the performance gains of Burst come from the use of [[SIMD]] and better awareness of [[aliasing]]
 
 # Collections
+
+Because these collections are unmanaged, they don’t create garbage collection pressure, and can be safely used in jobs and Burst-compiled code
+The collection types fall into a few categories: 
+* The types whose names start with Native will perform safety checks. These safety checks will throw an error: — If the collection is not properly disposed of. 
+* If the collection is used with jobs in a way that isn’t thread-safe.
+* The types whose names start with Unsafe perform no safety checks.
+* The remaining types which are neither Native or Unsafe are small struct types with no pointers, so they are not allocated at all. Consequently, they need no disposal and have no potential thread-safety issues.
+
+# Mathematics
+* a C# math library that, similar to Collections, is created for Burst and the job system to be able to compile C#/IL code into highly efficient native code.
+[Cheat sheet jic](https://github.com/Unity-Technologies/EntityComponentSystemSamples/blob/master/EntitiesSamples/Docs/cheatsheet/mathematics.md)

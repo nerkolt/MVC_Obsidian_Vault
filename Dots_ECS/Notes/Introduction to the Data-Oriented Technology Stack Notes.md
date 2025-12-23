@@ -13,4 +13,10 @@ Are loading times annoyingly long, and does the game freeze for full seconds eve
 > [!faq]- Moore's Law?
 > **[Moore's law](https://en.wikipedia.org/wiki/Moore%27s_law)** is the observation that the [number of transistors](https://en.wikipedia.org/wiki/Transistor_count "Transistor count") in an [integrated circuit](https://en.wikipedia.org/wiki/Integrated_circuit "Integrated circuit") (IC) doubles about every two years.
 
-**Why is my CPU code slow in the first place?**
+### **Why is my CPU code slow in the first place?**
+
+- **Garbage Collection (GC) Pauses**: In C#, when you create objects (like new enemies), memory gets "garbage-collected" automatically. This pauses your game briefly, causing stutters. Analogy: Imagine your game is a party—GC is like the cleanup crew stopping the music to tidy up.
+- **Slow Code Compilation**: Unity's default compilers (Mono or IL2CPP) don't optimize code well, making it run slower.
+- **Single-Threaded Code**: Most games run everything on one CPU "lane" (the main thread), ignoring extra cores. It's like having a multi-lane highway but only using one.
+- **Cache-Unfriendly Data**: Data scattered in memory makes the CPU wait (cache misses). Tight-packed data (like in arrays) is faster.
+- **Too Much Abstraction**: Fancy OOP code (inheritance, etc.) hides costs but slows everything down without clear fixes.

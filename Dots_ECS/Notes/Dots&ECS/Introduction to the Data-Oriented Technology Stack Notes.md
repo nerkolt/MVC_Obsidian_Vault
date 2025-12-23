@@ -37,4 +37,3 @@ For an easier alternative, Unity provides the C# job system:
 *  Jobs that share the same data should not execute concurrently because this creates race conditions. So the job system “safety checks” throw errors when you schedule jobs that might conflict with others.
 * Note that jobs are intended only for processing data in memory, not performing I/O (input and output) operations, such as reading and writing files or sending and receiving data over a network connection.
 * Because some I/O operations may block the calling thread, performing them in a job would defeat the goal of trying to maximize utilization of the CPU cores. If you want to do multithreaded I/O work, you should call asynchronous APIs from the main thread or use conventional C# multithreading.
-	

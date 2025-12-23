@@ -20,3 +20,8 @@ Are loading times annoyingly long, and does the game freeze for full seconds eve
 - **Single-Threaded Code**: Most games run everything on one CPU "lane" (the main thread), ignoring extra cores. It's like having a multi-lane highway but only using one.
 - **Cache-Unfriendly Data**: Data scattered in memory makes the CPU wait (cache misses). Tight-packed data (like in arrays) is faster.
 - **Too Much Abstraction**: Fancy OOP code (inheritance, etc.) hides costs but slows everything down without clear fixes.
+
+A GameObject and its components are all separately allocated, so they often end up in different parts of memory.
+
+
+Meeting with Khalil*

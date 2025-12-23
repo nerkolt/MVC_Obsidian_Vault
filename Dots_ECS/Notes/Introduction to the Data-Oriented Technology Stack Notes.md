@@ -23,5 +23,7 @@ Are loading times annoyingly long, and does the game freeze for full seconds eve
 
 A GameObject and its components are all separately allocated, so they often end up in different parts of memory.
 
+>[!faq]- for more info
+>check [[Introduction_to_the_Data-Oriented_Technology_Stack_for_advanced_Unity_developers_Unity_2022_LTS.pdf#page=8&selection=6,0,7,35|Introduction_to_the_Data-Oriented_Technology_Stack_for_advanced_Unity_developers_Unity_2022_LTS, page 8]]
 
-Meeting with Khalil*
+

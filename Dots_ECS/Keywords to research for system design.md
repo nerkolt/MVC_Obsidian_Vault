@@ -1,6 +1,6 @@
 
 [[Multithreading]]
-* c# job system
+* C# job system
 * ECS
 * Burst Compiler
 * garbage collection

@@ -1,0 +1,4 @@
+ *  **Single instruction, multiple data** (a type of [parallel computing](https://en.wikipedia.org/wiki/Parallel_computing "Parallel computing")) is a technique used to perform the same operation on multiple data elements simultaneously
+ * Such machines exploit [data level parallelism](https://en.wikipedia.org/wiki/Data_parallelism "Data parallelism"), but not [concurrency](https://en.wikipedia.org/wiki/Concurrent_computing "Concurrent computing"): there are simultaneous (parallel) computations, but each unit performs exactly the same instruction at any given moment (just with different data).
+ * A simple example is to add many pairs of numbers together, all of the SIMD units are performing an addition, but each one has different pairs of values to add.
+![[Single_instruction_multiple_data.png]]

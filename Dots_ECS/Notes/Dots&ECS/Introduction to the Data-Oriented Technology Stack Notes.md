@@ -39,4 +39,4 @@ For an easier alternative, Unity provides the C# job system:
 * Because some I/O operations may block the calling thread, performing them in a job would defeat the goal of trying to maximize utilization of the CPU cores. If you want to do multithreaded I/O work, you should call asynchronous APIs from the main thread or use conventional C# multithreading.
 # Burst Compiler
 * Burst-compiled code can’t access [[managed objects]]
-* 
+* the performance gains of Burst come from the use of [[SIMD]]

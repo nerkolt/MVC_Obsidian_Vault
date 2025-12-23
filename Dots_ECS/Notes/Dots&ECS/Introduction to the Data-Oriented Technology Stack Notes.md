@@ -53,3 +53,24 @@ The collection types fall into a few categories:
 # Mathematics
 * a C# math library that, similar to Collections, is created for Burst and the job system to be able to compile C#/IL code into highly efficient native code.
 [Cheat sheet jic](https://github.com/Unity-Technologies/EntityComponentSystemSamples/blob/master/EntitiesSamples/Docs/cheatsheet/mathematics.md)
+
+# ECS
+## Archetypes
+* all entities with the same set of component types are stored together in the same “archetype”.
+##### Example
+For example, say you have three component types: A, B, and C. Each unique combination of component types is a separate archetype, e.g.: 
+* All entities with component types A, B, and C, are stored together in one archetype. 
+* All entities with component types A and B are stored together in a second archetype. 
+* All entities with component types A and C are stored in a third archetype. 
+Adding a component to an entity or removing a component from an entity moves the entity to a different archetype.
+![[Pasted image 20251223202844.png]]
+
+>[!faq]- Conclusion
+> In Unity’s ECS, all entities with the same set of component types are stored together in the same “archetype”
+
+# Chunks
+
+
+A chunk’s arrays are always kept tightly packed: 
+* When a new entity is added to the chunk, it’s stored in the first free index of the arrays. 
+* When an entity is removed from the chunk, the last entity in the chunk is moved to fill in the gap (an entity is removed from a chunk when it’s being destroyed or moved to another archetype.)

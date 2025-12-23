@@ -1,3 +1,5 @@
+[More sources ](https://www.geeksforgeeks.org/c-sharp/managed-code-and-unmanaged-code-in-net/)
+
 **Managed objects** in C# are ==instances of classes or structures created within the .NET runtime environment (CLR) that are automatically tracked, allocated, and cleaned up by the Garbage Collector (GC)==.
 
 ## Key Characteristics of Managed Objects

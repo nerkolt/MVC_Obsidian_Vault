@@ -27,3 +27,8 @@ A GameObject and its components are all separately allocated, so they often end 
 >check [[Introduction_to_the_Data-Oriented_Technology_Stack_for_advanced_Unity_developers_Unity_2022_LTS.pdf#page=8&selection=6,0,7,35|Introduction_to_the_Data-Oriented_Technology_Stack_for_advanced_Unity_developers_Unity_2022_LTS, page 8]]
 
 
+# C# Job systems
+For an easier alternative, Unity provides the C# job system:
+*  The job system maintains a pool of worker threads, one for each additional core of the target platform. For example, when Unity runs on eight cores, it creates one main thread and seven worker threads. 
+* The worker threads execute units of work called jobs. When a worker thread is idle, it pulls the next available job from the job queue to execute. 
+* Once a job starts execution on a worker thread, it runs to completion (in other words, jobs are not preempted).

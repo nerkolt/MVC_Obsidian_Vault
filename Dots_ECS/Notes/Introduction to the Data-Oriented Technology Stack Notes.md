@@ -32,3 +32,9 @@ For an easier alternative, Unity provides the C# job system:
 *  The job system maintains a pool of worker threads, one for each additional core of the target platform. For example, when Unity runs on eight cores, it creates one main thread and seven worker threads. 
 * The worker threads execute units of work called jobs. When a worker thread is idle, it pulls the next available job from the job queue to execute. 
 * Once a job starts execution on a worker thread, it runs to completion (in other words, jobs are not preempted).
+## Job safety checks and dependencies
+
+*  Jobs that share the same data should not execute concurrently because this creates race conditions. So the job system “safety checks” throw errors when you schedule jobs that might conflict with others.
+* Note that jobs are intended only for processing data in memory, not performing I/O (input and output) operations, such as reading and writing files or sending and receiving data over a network connection.
+* Because some I/O operations may block the calling thread, performing them in a job would defeat the goal of trying to maximize utilization of the CPU cores. If you want to do multithreaded I/O work, you should call asynchronous APIs from the main thread or use conventional C# multithreading.
+	

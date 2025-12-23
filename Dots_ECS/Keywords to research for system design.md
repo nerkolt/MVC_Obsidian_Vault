@@ -7,6 +7,7 @@
 * data-oriented design
 * Race conditions
 * [[Cache miss_Hit]]
+* CPU cycles
 * Deadlocks
 * locking primitives C#
 * [[Addressable Assets]]

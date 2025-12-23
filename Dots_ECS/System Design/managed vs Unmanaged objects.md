@@ -11,3 +11,5 @@
 
 >[!faq] Unmanaged Resources
 > Objects that hold non-memory resources, such as file handles, network connections, or database connections. These must be explicitly released (e.g., via `Dispose()` or the `using` statement) because the GC does not directly control them.
+
+By “unmanaged”, it’s meant that these collections are not managed by the C# runtime or garbage collector; you are responsible for explicitly deallocating any unmanaged collection that you create by calling its Dispose() method once it’s no longer needed.

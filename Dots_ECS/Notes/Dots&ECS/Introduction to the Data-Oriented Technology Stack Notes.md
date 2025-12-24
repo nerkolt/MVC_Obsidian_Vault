@@ -78,3 +78,10 @@ A chunk’s arrays are always kept tightly packed:
 # Queries
 ![[QueryWorkflow.png]]
 # Subscenes and baking
+* A monobehavior referencing a scene asset to be baked(a scene nested in another scene)
+* Baking(feature) processes each subscene to produce a set of serialized entities.
+* baking: conversion of GO in a subscene into s.e .
+* when a subscene is loaded at runtime it's the subscene s.e that get loaded =/= the GO
+![[Pasted image 20251224112615.png]]
+* opening a subscene loads its GOs into the editor and triggers the baking conversion process
+* Closing a subscene unloads GOs from editors but entities produced 

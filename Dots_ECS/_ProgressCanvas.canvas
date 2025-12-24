@@ -9,7 +9,7 @@
 		{"id":"33adc6c82e8069e9","type":"file","file":"Newest/Dots_ECS/Notes/Dots&ECS/Start using DOTS in Half an Hour Notes.md","x":-1818,"y":169,"width":400,"height":400},
 		{"id":"595484286f6fa6ff","type":"file","file":"Newest/Dots_ECS/Notes/Dots&ECS/Entity Component System Samples Notes.md","x":-1272,"y":172,"width":400,"height":400},
 		{"id":"820851f3553d8548","type":"text","text":"## DOTS-Data Oriented Technology Stack","x":-300,"y":-240,"width":460,"height":60,"color":"5"},
-		{"id":"b5822fbbc842f136","type":"file","file":"Newest/Dots_ECS/Unity DOTS Explained (ECS, Job System, Burst Compiler - 2024 Still Updated).md","x":800,"y":172,"width":633,"height":1008}
+		{"id":"b5822fbbc842f136","type":"file","file":"Newest/Dots_ECS/Notes/Dots&ECS/Unity DOTS Explained (ECS, Job System, Burst Compiler - 2024 Still Updated).md","x":800,"y":172,"width":633,"height":1008}
 	],
 	"edges":[
 		{"id":"c43e00b70db2afda","fromNode":"820851f3553d8548","fromSide":"bottom","toNode":"5ac98bbdda8e7791","toSide":"top"},

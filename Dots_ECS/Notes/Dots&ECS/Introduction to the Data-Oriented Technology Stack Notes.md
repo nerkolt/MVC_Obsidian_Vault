@@ -85,3 +85,4 @@ A chunk’s arrays are always kept tightly packed:
 ![[Pasted image 20251224112615.png]]
 * opening a subscene loads its GOs into the editor and triggers the baking conversion process
 * Closing a subscene unloads GOs from editors but entities produced 
+* what we see is the entity baked from the GO 

@@ -77,3 +77,4 @@ A chunk’s arrays are always kept tightly packed:
 
 # Queries
 ![[QueryWorkflow.png]]
+# Subscenes and baking

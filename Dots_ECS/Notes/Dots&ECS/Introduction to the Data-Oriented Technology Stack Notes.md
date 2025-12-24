@@ -85,4 +85,23 @@ A chunk’s arrays are always kept tightly packed:
 ![[Pasted image 20251224112615.png]]
 * opening a subscene loads its GOs into the editor and triggers the baking conversion process
 * Closing a subscene unloads GOs from editors but entities produced 
+![[Pasted image 20251224124056.png]]
 * what we see is the entity baked from the GO 
+* any changes applied in play mode on the subscene entities will persist even after exiting
+
+
+
+
+
+
+### key things to remember
+- Entities are created with components.
+- Archetypes group them by component types.
+- Chunks store the data in fast arrays.
+- Queries find the right chunks to work on.
+- Jobs run the updates across CPU cores.
+
+ #### Why This Is Powerful
+- **Speed**: Chunks and archetypes make data access fast. Jobs use all CPU cores.
+- **Scale**: Handles thousands of entities (like the city’s drones and buildings) without lag.
+- **Organization**: Queries ensure you only update what needs it.

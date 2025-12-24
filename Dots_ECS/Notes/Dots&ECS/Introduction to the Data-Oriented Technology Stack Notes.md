@@ -63,7 +63,7 @@ For example, say you have three component types: A, B, and C. Each unique combin
 * All entities with component types A and B are stored together in a second archetype. 
 * All entities with component types A and C are stored in a third archetype. 
 Adding a component to an entity or removing a component from an entity moves the entity to a different archetype.
-![[Pasted image 20251223202844.png]]
+![[ArchetypeChunks.png]]
 
 >[!faq]- Conclusion
 > In Unity’s ECS, all entities with the same set of component types are stored together in the same “archetype”
@@ -74,3 +74,6 @@ Adding a component to an entity or removing a component from an entity moves the
 A chunk’s arrays are always kept tightly packed: 
 * When a new entity is added to the chunk, it’s stored in the first free index of the arrays. 
 * When an entity is removed from the chunk, the last entity in the chunk is moved to fill in the gap (an entity is removed from a chunk when it’s being destroyed or moved to another archetype.)
+
+# Queries
+![[QueryWorkflow.png]]

@@ -96,6 +96,8 @@ A chunk’s arrays are always kept tightly packed:
 
 * Baking effectively separates [[authoring data]] (the GameObjects that you edit in the Editor) from runtime data (the baked entities), so what you directly edit and what gets loaded at runtime don’t have to match 1-to-1. 
 * For example, you could write code to procedurally generate data during baking, which would spare you from paying the cost at runtime.
+![[ss&Baking.png]]
+![[PlayMode.png]]
 ## ECS Authoring
 
 When creating your game or application in the Unity Editor, you can use GameObjects and MonoBehaviours and create a conversion system to map those UnityEngine objects and components to entities.
@@ -103,7 +105,9 @@ When creating your game or application in the Unity Editor, you can use GameObje
 * An authoring component is just an ordinary MonoBehaviour // that has a defined Baker class.
 
 (recheck p21/49)
-
+![[Workflow.png]]
+![[ECSExample.png]]
+![[ECSeXME2.png]]
 # Streaming
 * In a large open world, for example, many elements must be loaded in as they come into view, and many elements must be unloaded as they go out of view. This technique is also referred to as streaming
 * Entities are far more suited for streaming than GameObjects because entities consume less memory and processing overhead, and they can be serialized and deserialized much more efficiently

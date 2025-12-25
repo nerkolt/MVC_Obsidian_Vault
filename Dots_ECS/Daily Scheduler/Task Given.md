@@ -11,13 +11,13 @@ car05Entity
 				 |__ Wheel
 
 wheel authoring component mahoush yasn3 fi wheel collider lill 3jeli (wheels)
-![[Pasted image 20251224180234.png]]
+![[WheelAuthoring.png]]
 
-![[Pasted image 20251224180333.png]]
-![[Pasted image 20251224180348.png]]
+![[wheelsChildren.png]]
+![[wheeelCAuth.png]]
 
 authoring is ready just add Wheel collider component 
-![[Pasted image 20251224180440.png]]
+![[WheelCollider.png]]
 **HOW?**
 
 

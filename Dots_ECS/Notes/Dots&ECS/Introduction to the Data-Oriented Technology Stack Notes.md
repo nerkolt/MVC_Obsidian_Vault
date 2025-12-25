@@ -79,7 +79,7 @@ A chunk’s arrays are always kept tightly packed:
 * If you change an entity archetype by adding or removing components, the components for that entity are moved to a different chunk.
 ![[chunks sotre.png]]
 ##### Visual of how chunks and archetypes organize data
-![[Pasted image 20251224170236.png]]
+![[ECS.png]]
 # Queries
 ![[QueryWorkflow.png]]
 # Subscenes and baking

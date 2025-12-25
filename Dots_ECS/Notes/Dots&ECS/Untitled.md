@@ -1,1 +1,1 @@
-![[Pasted image 20251224103638.png]]
+![[inherit vs Entity composition.png]]

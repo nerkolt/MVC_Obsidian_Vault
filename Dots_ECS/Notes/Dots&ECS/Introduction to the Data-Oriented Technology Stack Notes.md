@@ -64,17 +64,22 @@ For example, say you have three component types: A, B, and C. Each unique combin
 * All entities with component types A and C are stored in a third archetype. 
 Adding a component to an entity or removing a component from an entity moves the entity to a different archetype.
 ![[ArchetypeChunks.png]]
+* Only entities with exactly similar components get grouped into an archetype.(no more no less)
+![[Archetypes&chunks.png]]
 
 >[!faq]- Conclusion
 > In Unity’s ECS, all entities with the same set of component types are stored together in the same “archetype”
 
 # Chunks
 
-
 A chunk’s arrays are always kept tightly packed: 
 * When a new entity is added to the chunk, it’s stored in the first free index of the arrays. 
 * When an entity is removed from the chunk, the last entity in the chunk is moved to fill in the gap (an entity is removed from a chunk when it’s being destroyed or moved to another archetype.)
-
+* A chunk always contains entities of a single archetype. When a chunk of memory becomes full, a new chunk of memory is allocated for any new entities created with the same archetype. 
+* If you change an entity archetype by adding or removing components, the components for that entity are moved to a different chunk.
+![[chunks sotre.png]]
+##### Visual of how chunks and archetypes organize data
+![[Pasted image 20251224170236.png]]
 # Queries
 ![[QueryWorkflow.png]]
 # Subscenes and baking
@@ -82,18 +87,26 @@ A chunk’s arrays are always kept tightly packed:
 * Baking(feature) processes each subscene to produce a set of serialized entities.
 * baking: conversion of GO in a subscene into s.e .
 * when a subscene is loaded at runtime it's the subscene s.e that get loaded =/= the GO
-![[Pasted image 20251224112615.png]]
+![[subscne.png]]
 * opening a subscene loads its GOs into the editor and triggers the baking conversion process
 * Closing a subscene unloads GOs from editors but entities produced 
-![[Pasted image 20251224124056.png]]
+![[loadSubscene.png]]
 * what we see is the entity baked from the GO 
 * any changes applied in play mode on the subscene entities will persist even after exiting
 
+* Baking effectively separates [[authoring data]] (the GameObjects that you edit in the Editor) from runtime data (the baked entities), so what you directly edit and what gets loaded at runtime don’t have to match 1-to-1. 
+* For example, you could write code to procedurally generate data during baking, which would spare you from paying the cost at runtime.
+## ECS Authoring
 
+When creating your game or application in the Unity Editor, you can use GameObjects and MonoBehaviours and create a conversion system to map those UnityEngine objects and components to entities.
 
+* An authoring component is just an ordinary MonoBehaviour // that has a defined Baker class.
 
+(recheck p21/49)
 
-
+# Streaming
+* In a large open world, for example, many elements must be loaded in as they come into view, and many elements must be unloaded as they go out of view. This technique is also referred to as streaming
+* Entities are far more suited for streaming than GameObjects because entities consume less memory and processing overhead, and they can be serialized and deserialized much more efficiently
 ### key things to remember
 - Entities are created with components.
 - Archetypes group them by component types.
@@ -105,3 +118,8 @@ A chunk’s arrays are always kept tightly packed:
 - **Speed**: Chunks and archetypes make data access fast. Jobs use all CPU cores.
 - **Scale**: Handles thousands of entities (like the city’s drones and buildings) without lag.
 - **Organization**: Queries ensure you only update what needs it.
+
+>[!faq]- conclusion
+>Overall teamwork: Entities get components → Archetypes group them → Chunks store data efficiently → Query finds them → Job updates in parallel. Boom—your toy town runs without lag!
+
+# [[EntityComponentSystemSamples Github Notes]]

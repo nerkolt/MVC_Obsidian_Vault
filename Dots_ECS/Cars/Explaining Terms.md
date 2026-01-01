@@ -110,4 +110,5 @@ Disconnect the flow of power to the transmission without turing off the engine
 ![[axle_wheel.png]]
 
 # throttle 
+The throttle is a round metal "butterfly" blade that resides inside the round "bore" of the throttle body and controls the amount of air that is allowed to enter a gasoline engine. The opening/closing of this blade is controlled by a cable attached to the throttle pedal or by a computer-controlled electronic throttle motor.
 ![[engine.png]]

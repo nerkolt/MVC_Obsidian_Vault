@@ -20,7 +20,7 @@ Power generated in engine
 power sent to gearbox
 
 # drivetrain
-
+![[Drivetrain.png]]
 ## **Rear-Wheel Drive**
 
 The engine sends power to the rear wheels, which pushes the car forward. This setup offers several benefits for those who prioritize driving dynamics.

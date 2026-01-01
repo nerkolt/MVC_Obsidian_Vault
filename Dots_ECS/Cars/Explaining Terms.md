@@ -13,7 +13,7 @@ refer to [source](https://www.youtube.com/watch?v=fPjOWekzeGI)
 # Engine 
 
 ![[H engine.png|350]]
-
+![[pistonCrankshift.gif|350]]
 ![[3v6c.png|350]]
 Power generated in engine
 # Transmission

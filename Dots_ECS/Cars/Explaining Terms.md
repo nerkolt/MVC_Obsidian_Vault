@@ -44,7 +44,7 @@ where the engine powers the front wheels. This configuration offers distinct adv
 * So, the outer and inner wheels must rotate at different speeds because they do not travel the same distance. Otherwise, the tires will scrub the road. They will force the vehicle to move straight if the wheels are interconnected. 
 * You can reduce these effects if you proportionately distribute the engine torque to both the wheels. The manufacturers achieve this by employing the **differential mechanism** in the vehicle.
 
-![[Pasted image 20251230164158.png]]
+![[Differential.png]]
 # Open differential (OD)
 
 ![[OD.png|350]]
@@ -53,41 +53,41 @@ power takes the path of least resistance so if you spin one tire then that tire 
 ## Different scenarios : rotating at diff rpms
 * Straight forward
 spider wheel doesn't rotate on its own axis and follows the rest
-![[Pasted image 20251230170342.png]]
+![[wheelRotwithAXels.png]]
 * Right turn
-![[Pasted image 20251230170250.png|350]]
+![[RightRotationForWheels.png|350]]
 spider wheel rotates on its own axis 
 spider wheel is having a combined rotation and affects the side gear
 
-![[Pasted image 20251230170443.png|350]]
+![[spiderGearNotRotOnItsOwnAxis.png|350]]
 the side gear and spider wheel have to have same peripheral velocity 
-![[Pasted image 20251230170638.png|350]]
+![[wSpin+Rot.png|350]]
 peripheral velocity at the left side is Vrot+Vspin
 peripheral velocity at the right side is Vrot-Vspin
-![[Pasted image 20251230170924.png|350]]
+![[velocityRotSpin.png|350]]
 Speed on the left is higher than on the right and that's how the rotation happens on diff speeds 
 ![[Pasted image 20251230171135.png|350]]
 * Left Turn
 the opposite happens 
-![[Pasted image 20251230171326.png|350]]
+![[LeftTurnWheels.png|350]]
 in order to carry the load another spider gear is normally added
-![[Pasted image 20251230171421.png|350]]
+![[2SpiderGears.png|350]]
 
 ## Speed reduction
 Torque multiplication
-![[Pasted image 20251230171858.png|350]]
+![[closeupSpiderGear.png|350]]
 ## Turn the power flow direction by 90°
 
-![[Pasted image 20251230171921.png|350]]
+![[PDDiff-wheels.png|350]]
 
 ### issue could be encountered
 if one of the wheels is on a slippery track (not good traction) then majority of power will be transferred to that wheel which causes vehicle to not move.
-![[Pasted image 20251230172151.png|350]]
+![[powerDistributionTransmitterToDiff.png|350]]
 # Limited Slip Differential  (LSD)
 whenever you spin one wheel the other at the same time will start spinning in the same speed
 => better drift and traction because both tires are spinning trying to grab pavement
-![[Pasted image 20251230172537.png|350]]
-![[Pasted image 20251230172630.png|350]]
+![[axel+pinion+ringGear.png|350]]
+![[differentialCloseup.png|350]]
 since one wheel is on a high traction surface => high torque 
 ![[Torque_animation.gif]]
 # Clutch
@@ -107,7 +107,7 @@ Disconnect the flow of power to the transmission without turing off the engine
 - **When it works:** Continuously active, intervening in acceleration, braking, and cornering.
 - **Benefit:** Stabilizes the vehicle by braking individual wheels and/or reducing engine power to correct the car's path.
 # Axel
-![[Pasted image 20251230183331.png]]
+![[axle_wheel.png]]
 
 # throttle 
-![[Pasted image 20251230205437.png]]
+![[engine.png]]

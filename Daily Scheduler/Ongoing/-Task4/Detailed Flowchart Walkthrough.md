@@ -1,4 +1,3 @@
-
 ## Flowchart #1: Architecture Overview (The Big System Map)
 
 **Location:** Right at the beginning of the "Architecture Overview" section

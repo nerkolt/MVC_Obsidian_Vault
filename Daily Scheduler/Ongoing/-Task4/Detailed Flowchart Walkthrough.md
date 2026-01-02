@@ -1,8 +1,3 @@
-# Detailed Flowchart Walkthrough
-
-Let me go through each flowchart one by one, explaining exactly what's happening.
-
----
 
 ## Flowchart #1: Architecture Overview (The Big System Map)
 

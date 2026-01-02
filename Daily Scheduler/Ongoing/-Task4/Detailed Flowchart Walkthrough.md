@@ -64,11 +64,11 @@ This is the **architectural blueprint** showing how all the pieces fit together.
 [InputsManagerProvider]
 ```
 
-**What's happening:** You have multiple plugin files available in your project. Each one is a different way to read input (old Unity Input, new Input System, custom InputsManager, etc.).
+**What's happening:** You have multiple plugin files available in your project. Each one is a different way to read input (old Unity Input, new Input System, custom `InputsManager`, etc.). 
 
-**The dotted lines going to "Active Plugin"** mean: "These are all _implementations_ of the abstract PluginInputProvider class."
+**The dotted lines going to "Active Plugin"** mean: "These are all _implementations_ of the abstract `PluginInputProvider` class."
 
-**Key insight:** You might have 5 plugins installed in your project, but only ONE is active at a time (determined by that hash in VehicleInputSettings).
+**Key insight:** You might have 5 plugins installed in your project, but only ONE is active at a time (determined by that hash in `VehicleInputSettings`).
 
 #### Middle Section: Active Plugin
 
@@ -81,7 +81,7 @@ This is the **architectural blueprint** showing how all the pieces fit together.
 
 **What's happening:** Whichever plugin is active, it MUST provide these methods. When you call `GetSteering(playerId)`, it returns a float value representing how much the player is steering.
 
-**The playerId parameter is crucial:** It's how we handle multiple players. The plugin internally knows "Player 0 uses keyboard, Player 1 uses gamepad 1, Player 2 uses gamepad 2."
+**The `playerId` parameter is crucial:** It's how we handle multiple players. The plugin internally knows "Player 0 uses keyboard, Player 1 uses gamepad 1, Player 2 uses gamepad 2."
 
 #### Bottom Left: MVC Core
 
@@ -91,7 +91,7 @@ This is the **architectural blueprint** showing how all the pieces fit together.
 
 **What's happening:**
 
-1. **Bootstrapper** runs at game startup (before any scene loads)
+1. **[[Bootstrapper]]** runs at game startup (before any scene loads)
 2. It creates the **System** in TWO places:
     - ECS World (for SubScene entities)
     - HybridMono World (for GameObject vehicles)
@@ -102,9 +102,9 @@ This is the **architectural blueprint** showing how all the pieces fit together.
 [PluginInputReaderSystem] --discovers via reflection--> [Plugins]
 ```
 
-**What's happening:** The system uses C# reflection to scan your entire project and find every class that extends `PluginInputProvider`. It builds a list: "Okay, I found LegacyInputProvider, InputSystemProvider, and InputsManagerProvider."
+**What's happening:** The system uses C# [[reflection]] to scan your entire project and find every class that extends `PluginInputProvider`. It builds a list: "Okay, I found `LegacyInputProvider, InputSystemProvider, and InputsManagerProvider`."
 
-Then it looks at the hash in VehicleInputSettings and says: "Aha! The hash matches InputSystemProvider, so THAT'S my active plugin."
+Then it looks at the hash in `VehicleInputSettings` and says: "Aha! The hash matches InputSystemProvider, so THAT'S my active plugin."
 
 #### Bottom Right: Per Vehicle Entity
 
@@ -125,7 +125,7 @@ Found 3 vehicles:
 - Car C has PlayerIdentifier.Id = 2
 ```
 
-**Step 2:** For each vehicle, it reads the playerId and calls the plugin:
+**Step 2:** For each vehicle, it reads the `playerId` and calls the plugin:
 
 ```
 For Car A (playerId=0):
@@ -142,11 +142,11 @@ Car A.Powertrain.Inputs.Throttle = throttle
 Car A.Powertrain.Inputs.Brake = brake
 ```
 
-**Then the physics system reads from Powertrain.Inputs and moves the car!**
+**Then the physics system reads from `Powertrain.Inputs` and moves the car!**
 
 ---
 
-## Flowchart #2: PluginInputProvider Class Diagram
+## Flowchart #2: `PluginInputProvider` Class Diagram
 
 **Location:** In the "PluginInputProvider (Abstract Class)" section
 

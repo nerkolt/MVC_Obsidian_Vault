@@ -5,4 +5,4 @@ You can either use [Markdown Preview Mermaid Support](https://marketplace.visual
 
 You can also follow this guide for [git in obsidian](https://forum.obsidian.md/t/the-easiest-way-to-setup-obsidian-git-to-backup-notes/51429) tho keep in mind you gotta download this plugin within the software :
 
-![GitPlugin](Dots_ECS/References/GitPlugin.png)
+![GitPlugin](GitPlugin.png)

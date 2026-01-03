@@ -1,14 +1,14 @@
 ### Phase 1: MVC Core Infrastructure
 
 **Core Components (3 files):**
-- [ ] Create `PlayerIdentifier` IComponentData in `Vehicles/Runtime/Core/`
-- [ ] Create `PlayerIdentifierAuthoring` MonoBehaviour
-- [ ] Create `PlayerIdentifierBaker` (ECS + MonoBaker)
+- [x] Create `PlayerIdentifier` `IComponentData` in `Vehicles/Runtime/Core/`
+- [x] Create `PlayerIdentifierAuthoring` MonoBehaviour
+- [x] Create `PlayerIdentifierBaker` (ECS + MonoBaker)
 
 **Input Providers (3 files):**
-- [ ] Create `PluginInputProvider` abstract class
-- [ ] Create `VehicleInputSettings` ScriptableSingleton
-- [ ] Create `PluginInputBootstrapper` initialization class
+- [x] Create `PluginInputProvider` abstract class
+- [x] Create `VehicleInputSettings` ScriptableSingleton
+- [ ] Create [[`PluginInputBootstrapper`]] initialization class
 - [ ] Create `PluginInputReaderSystem` SystemBase
 
 ---

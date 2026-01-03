@@ -42,9 +42,9 @@ flowchart TB
     IMP -.-> PIP
 ```
 
-### What This Shows: The 50,000-Foot View
+### What This Shows: overall view
 
-This is the **architectural blueprint** showing how all the pieces fit together. Let me trace the flow:
+This is the **architectural blueprint** showing how all the pieces fit together.
 
 #### Top Section: Global Configuration
 
@@ -514,7 +514,7 @@ Car C (PlayerIdentifier.Id = 2, Powertrain.Inputs)
 
 Now we loop through each vehicle found in Step 2:
 
-**Step 3a: Get PlayerIdentifier.Id**
+**Step 3a: Get `PlayerIdentifier.Id`**
 
 ```
 [Get PlayerIdentifier.Id]
@@ -1007,12 +1007,10 @@ Entities.ForEach((ref Powertrain.Inputs inputs) =>
 
 Each flowchart serves a specific purpose:
 
-1. **Architecture Overview** - 50,000-foot view of how everything connects
+1. **Architecture Overview** - view of how everything connects
 2. **Class Diagram** - Shows plugin inheritance structure
 3. **Initialization Sequence** - Shows startup timing and order
 4. **System Update Flow** - Shows logic within a single system update
 5. **Runtime Data Flow** - Shows complete frame timeline across systems
 6. **Split-Screen Configuration** - Shows how to set up multi-player
 7. **Input Source Separation** - Shows how AI/network input coexists
-
-Does this help clarify each flowchart? Any specific one you

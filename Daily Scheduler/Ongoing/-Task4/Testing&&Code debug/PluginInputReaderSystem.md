@@ -248,9 +248,7 @@ plugin.GetSteering(1)  // Plugin internally checks: "Player 1 uses Gamepad 1"
    - Writes results to the vehicle's inputs
 4. Automatically disables when no player vehicles exist
 
-### The Magic
+### PS
 - One system works for both SubScenes and GameObjects
 - One plugin serves all vehicles, but each vehicle gets input for its specific player
 - Clean separation: system handles distribution, plugin handles reading
-
-Does this clarify how it all works together? Want me to explain any specific part in more detail?

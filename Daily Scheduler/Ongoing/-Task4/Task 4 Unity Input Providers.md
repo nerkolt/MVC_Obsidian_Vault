@@ -8,18 +8,18 @@
 **Input Providers (3 files):**
 - [x] Create `PluginInputProvider` abstract class
 - [x] Create `VehicleInputSettings` ScriptableSingleton
-- [ ] Create [[`PluginInputBootstrapper`]] initialization class
-- [ ] Create `PluginInputReaderSystem` SystemBase
+- [x] Create [[PluginInputBootstrapper]] initialization class
+- [x] Create `PluginInputReaderSystem` SystemBase
 
 ---
 ### Phase 2: Plugin Implementations
 
-**InputsManager Plugin (1 file):**
+**`InputsManager` Plugin (1 file):**
 - [ ] Create `InputsManagerProvider` extending `PluginInputProvider`
-- [ ] Integrate with existing InputsManager infrastructure
+- [ ] Integrate with existing`InputsManager` infrastructure
 
 **Legacy Input Plugin (1 file):**
-- [ ] Create `LegacyInputProvider` extending `PluginInputProvider`
+- [x] Create `LegacyInputProvider` extending `PluginInputProvider`
 - [ ] Configure axis names for Unity Input Manager
 
 **New Input System Plugin (1 file):**
